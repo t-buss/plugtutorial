@@ -16,6 +16,7 @@ defmodule Plugtutorial.Mixfile do
     [
       extra_applications: [:logger],
       mod: {Plugtutorial, []},
+      # env: [cowboy_port: 8080], # Set this in config/config.exs
     ]
   end
 
