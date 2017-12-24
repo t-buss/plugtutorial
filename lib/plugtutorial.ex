@@ -6,7 +6,7 @@ defmodule Plugtutorial do
     children = [
       Plug.Adapters.Cowboy.child_spec(
         :http,
-        Example.HelloWorldPlug,
+        Plugtutorial.Router,
         [],
         port: 8080)
     ]
