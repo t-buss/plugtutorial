@@ -1,6 +1,14 @@
 defmodule Plugtutorial.Router do
   use Plug.Router
 
+  plug(Plug.Parsers, parsers: [:urlencoded, :multipart])
+
+  plug(
+    Plugtutorial.Plug.VerifyRequest,
+    fields: ["content", "mimetype"],
+    paths: ["/upload"]
+  )
+
   plug(:match)
   plug(:dispatch)
 
