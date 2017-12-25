@@ -1,21 +1,3 @@
 # Plugtutorial
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `plugtutorial` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:plugtutorial, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/plugtutorial](https://hexdocs.pm/plugtutorial).
-
+Following the Plug tutorial for Elixir applications at [Elixir School](https://elixirschool.com/en/lessons/specifics/plug/)
