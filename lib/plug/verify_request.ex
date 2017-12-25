@@ -16,12 +16,12 @@ defmodule Plugtutorial.Plug.VerifyRequest do
   end
 
   defp verify_request!(body_params, fields) do
-    verified = 
+    verified =
       body_params
       |> Map.keys()
       |> contains_fields?(fields)
 
-      unless verified, do: raise(IncompleteRequestError)
+    unless verified, do: raise(IncompleteRequestError)
   end
 
   defp contains_fields?(keys, fields), do: Enum.all?(fields, &(&1 in keys))
